@@ -22,7 +22,7 @@ header img{
     color: #fff;
 }
 
-.nav .nav-link:hover{ /*altera a cor ao passar o mouse*/
+#cabecalho .nav .nav-link:hover{ /*altera a cor ao passar o mouse*/
     color: #ffee33;
 }
 
@@ -44,6 +44,10 @@ section p{
 
 .color-categoria{
     color:#9f3f4b;
+}
+
+.nav .nav-link:hover{ /*altera a cor ao passar o mouse*/
+    color: #2b639e;
 }
 
 .nav-produtos .nav-link.active{ /* tudo junto para selecionar 2 seletores, duas classes css*/
@@ -103,14 +107,24 @@ footer{
     font-weight: bold;
 }
 
+.color-text{
+    color: #9f3f4b;
+}
+
+
 @media(max-width: 767px){
     .carousel-item img{
-        height: 400px;
+        height: 280px;
     }
 
     footer{
         font-size: small;
     }
+
+    header a{
+        width: 400px;
+    }
+
 }
 
 
