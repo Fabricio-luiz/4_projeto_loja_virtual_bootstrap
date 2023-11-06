@@ -1,0 +1,122 @@
+body{
+    font-family: 'Roboto', sans-serif; /*Roboto ou uma fonte sem serifa (fonte de fallback)*/
+    background-color: #eceef0;
+}
+
+.navbar{
+    background-color: #9f3f4b;
+}
+
+header img{
+    height: 200px; /*altura*/
+    max-width: 100%; /*largura*/
+}
+
+#cabecalho .nav .nav-link.active{ /*item ativo do menu*/
+    background-color: #c26974;
+    color:#ffee33;
+    font-weight: bold;
+}
+
+#cabecalho .nav .nav-link{ /* demais itens do menu*/
+    color: #fff;
+}
+
+.nav .nav-link:hover{ /*altera a cor ao passar o mouse*/
+    color: #ffee33;
+}
+
+.navbar-toggler{ /*Botão do menu nomodo responsivo*/
+    background-color: #c26974;
+}
+
+.text-justify { /*classe criada para justificar o texto da sessão Sobre a loja*/
+    text-align: justify;
+}
+
+.section-title{
+    color: #2b639e;
+}
+
+section p{
+    font-size: 17px;
+}
+
+.color-categoria{
+    color:#9f3f4b;
+}
+
+.nav-produtos .nav-link.active{ /* tudo junto para selecionar 2 seletores, duas classes css*/
+    background-color: #9f3f4b;
+    color:#ffee33;
+}
+
+.button-comprar,
+.button-blog{
+    background-color:#2b639e;
+    color: #fff;
+    border: none;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.button-comprar:hover,
+.button-blog:hover{
+    background-color: #9f3f4b;
+    color:#ffee33;
+}
+
+#produtos,
+#fale-conosco{
+    background-color: #fff;
+}
+
+.blog-image{
+    object-fit: cover; /*propriedade object-fit nas imagens dos cards para melhor adaptá-las ao enquadramento*/
+    max-width: 100%;
+    height: 300px;
+}
+
+.social-links li{
+    list-style: none; /*remove os bullets da lista*/
+    display: inline; /*para deixar os ícons um ao lado do outro*/
+}
+
+.social-links a{
+    text-decoration: none; /*retira o underline*/
+}
+
+footer{
+    background-color: #9f3f4b;
+    color: #fff;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+.message-error{
+    color: rgb(255, 49, 49);
+    font-size: 12px;
+    font-style:italic;
+    font-weight: bold;
+}
+
+@media(max-width: 767px){
+    .carousel-item img{
+        height: 400px;
+    }
+
+    footer{
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Tennis - Pro Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <a href="./index.html"><img src="./logo_img/Logo _loja.png" class="navbar-brand" alt="Logomarca do site"></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-star me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">
+                            <i class="bi bi-window-dock me-1"></i>
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./banner_img/banner_loja_1.1.jpg" alt="Loja 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./banner_img/banner_loja_2.1.jpg" alt="Loja 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./banner_img/banner_loja_3.1.jpg" alt="Loja 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <section id="sobre-a-loja">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./loja_img/loja.png" class="d-block w-100" alt="Imagem da loja">
+                        </div>
+                        <div class="col-md-7 pt-2 text-justify">
+                            <h2 class="section-title fw-bold">Sobre a loja</h2>
+                            <p>
+                                Bem-vindos à Start Tennis Pro Shop, se você é um entusiasta do tênis ou um jogador apaixonado em busca dos melhores equipamentos, você chegou ao lugar certo. Nossa loja virtual é o destino definitivo para tudo relacionado ao tênis, oferecendo uma ampla variedade de artigos de alta qualidade para atender às suas necessidades nas quadras.
+                            </p>
+                            <p>
+                                Raquetes de desempenho superior, calçados especializados, roupas técnicas e confortáveis, acessórios essenciais, pensamos em tudo para você.
+                            </p>
+                            <p>
+                                Acreditamos que o equipamento certo pode elevar o seu jogo para o próximo nível. Nossa paixão pelo tênis nos impulsiona a oferecer produtos de qualidade que atendam às suas expectativas e necessidades. Navegue pela nossa coleção, faça suas escolhas e prepare-se para dominar a quadra com confiança. Estamos aqui para ajudá-lo a alcançar o sucesso no tênis!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fw-bold mb-5">Nossos produtos</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="nav-link active color-categoria fw-bold text-start">Acessórios</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bolas" class="nav-link color-categoria fw-bold text-start">Bolas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#calcados" class="nav-link color-categoria fw-bold text-start">Calçados</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cordas" class="nav-link color-categoria fw-bold text-start">Cordas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#raquetes" class="nav-link color-categoria fw-bold text-start">Raquetes</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/acessorios/1_overgrip_babolat _pro_tour.jpg" class="d-block w-100 rounded-3" alt="Grip para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Overgrip Babolat Pro Tour</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/acessorios/2_overgrip_head _prime_tour.jpg" class="d-block w-100 rounded-3" alt="Grip para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Overgrip Head Prime Tour</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/acessorios/3_cushion_grip_yonex_leather.jpg" class="d-block w-100 rounded-3" alt="Grip para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Cushion Grip Yonex Leather</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/acessorios/4_overgrip_wilson_pro_comfort.jpg" class="d-block w-100 rounded-3" alt="Grip para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Overgrip Wilson Pro Comfort</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bolas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/bolas/1_bola_de_tenis_head_championship.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Kit bola de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Bola Head Championship</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/bolas/2_bola_de_tenis_babolat_gold_championship.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Kit bola de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Bola Babolat Gold Championship</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/bolas/3_bola_de_tenis_wilson_championship.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Kit bola de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Bola Wilson Championship</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/bolas/4_bola_de_tenis_wilson_roland_garros_all_court.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Kit bola de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Bola Wilson Roland Garros</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="calcados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/calcados/1_tenis_nike_air_zoom_vapor_pro_hc.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Tenis Nike zoom Air</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/calcados/2_tenis_nike_zoom_gp_turbo_hc_osaka.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Tenis Nike zoom GP Turbo</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/calcados/3_tenis_babolat_sfx3.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Tenis Babolat SFX3</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/calcados/4_tenis_babolat_jet_tere_clay.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Tenis Babolat Jet Tere Clay</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="cordas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/cordas/1_corda_babolat_rpm_blast_16-L_1-30mm.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Corda para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Corda Babolat RPM Blast</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/cordas/2_corda_wilson_sensation_plus_17-L_1-28mm.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Corda para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Corda Wilson Sensation</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/cordas/3_corda_signum_pro_poly_plasma_1-23mm.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Corda para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Corda Signum Pro Poly Plasma</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/cordas/4_corda_yonex_poly_tour_spin_16-L_1-25mm.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Corda para raquete">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Corda Yonex Poly Tour</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="raquetes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/raquetes/1_raquete_de_tenis_babolat_pure_strike_98.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Raquete de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Raquete de Tenis Babolat Pure Strike</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/raquetes/2_raquete_de_tenis_wilson_blade_98.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Raquete de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Raquete de Tenis Wilson Blade</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/raquetes/3_raquete_de_tenis_yonex_ezone_100.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Raquete de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Raquete de Tenis Yonex Ezone</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/raquetes/4_raquete_de_tenis_babolat_pure_aero_rafa.jpg" class="d-block w-100 rounded-4 cardapio-image" alt="Raquete de tenis">
+                                        <h5 class="color-categoria fw-bold text-center mt-2">Raquete de Tenis Babolat Pure Aero Rafa</h5>
+                                        <div class="price">
+                                            <del class="d-block">R$ 199,90</del>
+                                            <strong class="color-categoria fw-bold fs-3">R$ 149,90</strong>
+                                        </div>
+                                        <button type="button" class="color-categoria fw-bold button-comprar w-100 rounded-2 pt-2 pb-2 mt-4">COMPRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fw-bold mb-5">Publicações recentes</h2>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <article class="card">
+                            <div class="card-header">
+                                Melhore seu jogo
+                            </div>
+                            <img src="./blog_img/imagem_blog_1.jpg" alt="Foto Nadal" class="blog-image">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-center mt-2">5 dicas para manter o foco</h4>
+                                <p class="card-text text-justify"> 
+                                    O fator psicológico sempre teve destaque nas pautas sobre tênis. Um tenista capaz de manter o foco e a concentração durante longas partidas pode obter resultados melhores e ingressar no grupo de elite do tênis...
+                                </p>
+                                <a href="#" class="btn color-categoria fw-bold button-blog">Continue lendo...</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>26/09/2023 às 10h30</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <article class="card">
+                            <div class="card-header">
+                                Sobre o tênis
+                            </div>
+                            <img src="./blog_img/imagem_blog_2.jpg" alt="Imagem dois tenistas" class="blog-image">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-center mt-2">Nova geração de tenistas</h4>
+                                <p class="card-text text-justify">
+                                    A Rússia sempre foi reconhecida como uma potência do tênis, tendo conquistado dois títulos da Copa Davis e outros quatro na Fed Cup. O tênis russo revelou nomes como: Yevegny Kafelnikov, ex-número 1 do mundo...
+                                </p>
+                                <a href="#" class="btn color-categoria fw-bold button-blog">Continue lendo...</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>03/10/2023 às 10h30</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <article class="card">
+                            <div class="card-header">
+                                Para jogadores
+                            </div>
+                            <img src="./blog_img/imagem_blog_3.jpg" alt="Imagem tenista" class="blog-image">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-center mt-2">O lado psicológico do tênis</h4>
+                                <p class="card-text text-justify">
+                                    Em qualquer esporte, o sucesso ou o fracasso de um atleta resulta de uma combinação de capacidades físicas e mentais. O tênis é um dos esportes que mais gera tensão pelo número individual de jogadas que necessitam...
+                                </p>
+                                <a href="#" class="btn color-categoria fw-bold button-blog">Continue lendo...</a>
+                            </div>
+                            <footer class="card-footer">
+                                Postado em <time>10/10/2023 às 10h30</time>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="color-categoria fw-bold button-comprar rounded-2 p-2">
+                        <i class="bi bi-plus-circle align-middle me-1"></i>
+                            Veja mais...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fw-bold">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form class="form-campo">
+                            <div class="mb-3"> <!--input para nome-->
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" name="nome">
+                            </div>
+                            <div class="mb-3"> <!--input para e-mail-->
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" name="email">
+                            </div>
+                            <div class="mb-3"> <!--input para telefone-->
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone">
+                            </div>
+                            <div class="mb-3"> <!--input para mensagem-->
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <label class="form-check-label" for="aceitoTermos">Li e concordo com os termos do site</label>  
+                                <input class="form-check-input" type="checkbox" id="aceitoTermos" name="aceitoTermos"/>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 mb-5">
+                        <div class="row">
+                            <h3 class="section-title text-colored fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-3">
+                            <h3 class="section-title text-colored fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p class="fw-bold">
+                                Rua exemplo, nº 1000 CEP: 00000-000, Bairro - Bootstrap - São Paulo / SP
+                            </p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1118411016464!2d-46.65751212375277!3d-23.564426361706655!
+                            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c898859441%3A0xf1f2bc61d1b530da!2sAlameda%20Santos%2C%20S%C3%A3o%20Paul
+                            o%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1698423183288!5m2!1spt-BR!2sbr" width="auto" height="210" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-4"></iframe> <!--width = largura / height = altura-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="text-center pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        2023 &copy; Start Tennis Pro Shop - Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
