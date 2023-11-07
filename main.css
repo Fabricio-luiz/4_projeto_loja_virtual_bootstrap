@@ -70,6 +70,11 @@ section p{
     color:#ffee33;
 }
 
+.button-blog:active{
+    background-color: #2b639e;
+    color: #fff ;
+}
+
 #produtos,
 #fale-conosco{
     background-color: #fff;
@@ -109,6 +114,10 @@ footer{
 
 .color-text{
     color: #9f3f4b;
+}
+
+.tab-pane h5{ /*Ajuste no nome do produto - altura da linha*/
+    min-height: 50px;
 }
 
 
