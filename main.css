@@ -70,9 +70,9 @@ section p{
     color:#ffee33;
 }
 
-.button-blog:active{
+.button-blog:focus{ /*mantém a customização do botãoapós o click*/
     background-color: #2b639e;
-    color: #fff ;
+    color: #fff;
 }
 
 #produtos,
